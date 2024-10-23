@@ -1,0 +1,15 @@
+My username is haydenbhavsar
+My home directory is /Users/haydenbhavsar
+The contents of the tfcb_2024/lectures/lecture04/ directory are
+01-first-steps.md
+02-directories
+03-redirection
+04-vim
+05-history
+06-scripting
+07-more-interactive-shell
+README.md
+quickref.md
+sequence.gb
+slides
+vader.txt

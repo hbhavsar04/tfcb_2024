@@ -11,8 +11,7 @@ Replace the lines specified in _italics_ with your answers and save as a text fi
 
 Complete the interactive tutorial.
 
-_Did you hit any points of frustration, and if so, how could we improve the material to avoid that frustration?_
-
+The part of the history section which discussed getting a longer history on mac was a bit confusing. I could not get it to work and ended up skipping it since it was optional. 
 
 ## Problem 1
 
@@ -52,7 +51,19 @@ sequence.gb<br>
 slides<br>
 vader.txt<br>
 
-_Paste your SCRIPT here (not the output)_
+#!/bin/bash
+
+lecture_dir="$HOME/Desktop/repo dest/tfcb_2024/lectures/lecture04"
+lecture_contents=$(ls "$lecture_dir")
+
+echo "My username is $USER" > question01.txt
+echo "My home directory is $HOME" >> question01.txt
+echo "The contents of the tfcb_2024/lectures/lecture04/ directory are" >> question01.txt
+echo "$lecture_contents" >> question01.txt
+
+mkdir -p homework02
+
+mv question01.txt homework02
 
 
 ## Problem 2
@@ -75,6 +86,10 @@ tfcb_2023/homeworks/homework02/list.txt
 
 You can make the contents of those files whatever you want (hint: slide 9... )
 
-_Paste your SCRIPT here (not the output)_
+#!/bin/bash
+
+mkdir -p homework02/question02
+list_file="$HOME/Desktop/repo dest/tfcb_2024/homeworks/homework02/list.txt"
+for i in $(cat "$list_file"); do echo "File $i" > "homework02/question02/file$i.txt"; done
 
 
